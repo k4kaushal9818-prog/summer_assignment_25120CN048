@@ -1,0 +1,17 @@
+# Program to reverse a number
+
+num = int(input("Enter a number: "))
+
+temp = abs(num)  # Handles negative numbers
+reverse = 0
+
+while temp > 0:
+    digit = temp % 10
+    reverse = reverse * 10 + digit
+    temp = temp // 10
+
+# Preserve the negative sign if needed
+if num < 0:
+    reverse = -reverse
+
+print("Reversed number:", reverse)
