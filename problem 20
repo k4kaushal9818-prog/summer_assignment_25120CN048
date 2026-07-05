@@ -1,0 +1,24 @@
+# Program to find the largest prime factor of a number
+
+num = int(input("Enter a number: "))
+
+largest_prime = -1
+
+# Remove all factors of 2
+while num % 2 == 0:
+    largest_prime = 2
+    num //= 2
+
+# Check for odd factors
+i = 3
+while i * i <= num:
+    while num % i == 0:
+        largest_prime = i
+        num //= i
+    i += 2
+
+# If num is a prime number greater than 2
+if num > 2:
+    largest_prime = num
+
+print("Largest prime factor is:", largest_prime)
