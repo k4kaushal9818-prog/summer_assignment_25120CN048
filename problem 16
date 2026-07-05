@@ -1,0 +1,19 @@
+# Program to print Armstrong numbers in a given range
+
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
+
+print("Armstrong numbers between", start, "and", end, "are:")
+
+for num in range(start, end + 1):
+    order = len(str(num))
+    temp = num
+    total = 0
+
+    while temp > 0:
+        digit = temp % 10
+        total += digit ** order
+        temp //= 10
+
+    if total == num:
+        print(num)
