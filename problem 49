@@ -1,0 +1,16 @@
+# Program to input and display an array
+
+# Taking array elements from user
+arr = []
+
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+    element = int(input("Enter element: "))
+    arr.append(element)
+
+# Displaying array
+print("Array elements are:")
+
+for i in range(n):
+    print(arr[i], end=" ")
