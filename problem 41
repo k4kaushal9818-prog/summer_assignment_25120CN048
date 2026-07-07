@@ -1,0 +1,14 @@
+# Program to find sum of two numbers using function
+
+def sum_of_two_numbers(a, b):
+    return a + b
+
+# Taking input from user
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+# Calling function
+result = sum_of_two_numbers(num1, num2)
+
+# Displaying result
+print("Sum of two numbers is:", result)
