@@ -1,0 +1,17 @@
+# Program to print Fibonacci series using function
+
+def fibonacci(n):
+    a = 0
+    b = 1
+    
+    for i in range(n):
+        print(a, end=" ")
+        c = a + b
+        a = b
+        b = c
+
+# Taking input from user
+terms = int(input("Enter number of terms: "))
+
+# Calling function
+fibonacci(terms)
