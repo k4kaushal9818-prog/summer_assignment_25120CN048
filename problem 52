@@ -1,0 +1,24 @@
+# Program to count even and odd elements in array
+
+arr = []
+
+n = int(input("Enter number of elements: "))
+
+# Input array elements
+for i in range(n):
+    element = int(input("Enter element: "))
+    arr.append(element)
+
+even_count = 0
+odd_count = 0
+
+# Counting even and odd elements
+for i in range(n):
+    if arr[i] % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+# Displaying results
+print("Count of even elements:", even_count)
+print("Count of odd elements:", odd_count)
