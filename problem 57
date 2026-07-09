@@ -1,0 +1,9 @@
+# Program to reverse an array
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Original array:", numbers)
+
+numbers.reverse()
+
+print("Reversed array:", numbers)
