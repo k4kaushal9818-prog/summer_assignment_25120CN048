@@ -1,0 +1,16 @@
+# Program to find pair with given sum
+
+numbers = [10, 20, 30, 40, 50]
+
+target = int(input("Enter the required sum: "))
+
+found = False
+
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] + numbers[j] == target:
+            print("Pair found:", numbers[i], numbers[j])
+            found = True
+
+if not found:
+    print("No pair found")
