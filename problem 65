@@ -1,0 +1,11 @@
+# Input first array
+arr1 = list(map(int, input("Enter elements of first array: ").split()))
+
+# Input second array
+arr2 = list(map(int, input("Enter elements of second array: ").split()))
+
+# Merge arrays
+merged = arr1 + arr2
+
+# Display merged array
+print("Merged Array:", merged)
