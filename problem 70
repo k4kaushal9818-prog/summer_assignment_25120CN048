@@ -1,0 +1,17 @@
+# Input array
+arr = list(map(int, input("Enter elements: ").split()))
+
+# Selection Sort
+n = len(arr)
+
+for i in range(n):
+    min_index = i
+    for j in range(i + 1, n):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    # Swap the minimum element with the current element
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+# Display sorted array
+print("Sorted array:", arr)
