@@ -1,0 +1,31 @@
+# Program to subtract two matrices
+
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+print("Enter elements of first matrix:")
+A = []
+for i in range(rows):
+    row = list(map(int, input().split()))
+    A.append(row)
+
+print("Enter elements of second matrix:")
+B = []
+for i in range(rows):
+    row = list(map(int, input().split()))
+    B.append(row)
+
+# Subtracting matrices
+Sub = []
+for i in range(rows):
+    row = []
+    for j in range(cols):
+        row.append(A[i][j] - B[i][j])
+    Sub.append(row)
+
+# Display result
+print("Difference of the matrices:")
+for i in range(rows):
+    for j in range(cols):
+        print(Sub[i][j], end=" ")
+    print()
