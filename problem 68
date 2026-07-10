@@ -1,0 +1,15 @@
+# Input first array
+arr1 = list(map(int, input("Enter elements of first array: ").split()))
+
+# Input second array
+arr2 = list(map(int, input("Enter elements of second array: ").split()))
+
+# Find common elements
+common = []
+
+for i in arr1:
+    if i in arr2 and i not in common:
+        common.append(i)
+
+# Display result
+print("Common elements:", common)
