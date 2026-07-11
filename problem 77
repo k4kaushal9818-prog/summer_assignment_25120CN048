@@ -1,0 +1,34 @@
+# Input dimensions
+rows1 = int(input("Enter rows of first matrix: "))
+cols1 = int(input("Enter columns of first matrix: "))
+
+matrix1 = []
+print("Enter elements of first matrix:")
+for i in range(rows1):
+    matrix1.append(list(map(int, input().split())))
+
+rows2 = int(input("Enter rows of second matrix: "))
+cols2 = int(input("Enter columns of second matrix: "))
+
+# Check if multiplication is possible
+if cols1 != rows2:
+    print("Matrix multiplication is not possible.")
+else:
+    matrix2 = []
+    print("Enter elements of second matrix:")
+    for i in range(rows2):
+        matrix2.append(list(map(int, input().split())))
+
+    # Initialize result matrix
+    result = [[0 for j in range(cols2)] for i in range(rows1)]
+
+    # Multiply matrices
+    for i in range(rows1):
+        for j in range(cols2):
+            for k in range(cols1):
+                result[i][j] += matrix1[i][k] * matrix2[k][j]
+
+    # Display result
+    print("Product of the matrices:")
+    for row in result:
+        print(*row)
