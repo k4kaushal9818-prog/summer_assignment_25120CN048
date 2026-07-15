@@ -1,0 +1,7 @@
+# Program to convert lowercase to uppercase
+
+text = input("Enter a lowercase string: ")
+
+uppercase_text = text.upper()
+
+print("Uppercase:", uppercase_text)
